@@ -6,6 +6,7 @@ This repo provides a simple `llm` class for sending prompts and retrieving respo
 ---
 
 ## Features
+
 - Minimal wrapper class for OpenRouter LLMs
 - Simple `prompt()` method for sending user queries
 - Built on top of the official `openai` Python SDK
@@ -21,6 +22,7 @@ Clone the repository:
 git clone https://github.com/your-username/llm-openrouter-client.git
 cd llm-openrouter-client
 ```
+
 Install dependencies:
 
 ```bash
@@ -28,17 +30,18 @@ pip install openai
 ```
 
 ## Setup
-You’ll need an API key from OpenRouter.
+
+You'll need an API key from OpenRouter.
 Set it as an environment variable:
+
 ```bash
 export OPENROUTER_API_KEY="your_api_key_here"
 ```
 
 ## Usage
+
 ```python
-import os
-from openai import OpenAI
-from llm_client import llm  # adjust import as needed
+from llm_client import llm
 
 # Initialize client
 chatbot = llm()
